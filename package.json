@@ -1,0 +1,45 @@
+{
+  "name": "dsh-off-peak-indicator",
+  "version": "0.1.0",
+  "private": true,
+  "description": "DeepSeek peak / off-peak pricing indicator for the DSH Web UI: one composer-dock cell with the current pricing class and the countdown to the switch.",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "cordis",
+    "plugin",
+    "pricing",
+    "off-peak"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DazzzleKK/dsh-off-peak-indicator.git"
+  },
+  "homepage": "https://github.com/DazzzleKK/dsh-off-peak-indicator#readme",
+  "bugs": {
+    "url": "https://github.com/DazzzleKK/dsh-off-peak-indicator/issues"
+  },
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ]
+}

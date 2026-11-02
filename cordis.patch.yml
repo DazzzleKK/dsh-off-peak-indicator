@@ -1,0 +1,6 @@
+# dsh-off-peak-indicator bundle patch: inserts the plugin's row into the
+# profile's plugin roster. The row mounts the empty Host half plus the browser
+# half declared by `dsh.client` in package.json.
+- insert:
+    - id: off-peak-indicator
+      name: dsh-off-peak-indicator
